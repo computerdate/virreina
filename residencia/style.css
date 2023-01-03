@@ -1,0 +1,280 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  user-select: none;
+  cursor:url('../cur1.png'), auto;
+  }
+
+a:hover, a:active, a:visited{
+  cursor:url('../cur1.png');
+}
+
+body {
+  background-color: none;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  place-items: center center;
+  }
+
+
+h4 {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  padding-left: 20px; 
+  padding-right: 20px; 
+  margin: 10px;
+  font-family: 'Xanh Mono', monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9vw;
+  color: black;
+  line-height: 1.3;
+  text-align: left;
+  border: 1px solid black;
+  }
+
+
+#WS, #WS1, #WS2, #WS3, 
+#LF, #LF1, #LF2, #LF3,  
+#SR, #SR1, #SR2, #SR3,  
+#UU, #UU1, #UU2, #UU3,  
+#A, #A1, #A2, #A3
+  { 
+    border: none;
+    background-color: none;
+    display: block;
+    align-items: center center;
+    place-items: center center;
+    float: left;
+    background-color: transparent;
+    cursor:url('cur2.png'), auto;
+  }
+
+
+  .ui-widget-content, .rojo, .rosa, .verde, .azul {
+    position: absolute;
+    display: none;
+    top: 3%;
+    left: 3%;
+    /*
+        max-width: 40vw;
+    max-height: 40vw;
+    
+    top:10%;
+    right: 33%;
+    */
+  }
+  
+  .ui-widget-content:hover+.rojo {
+    display: block;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+  }
+  
+  
+  .hidden {
+    display: none;
+  }
+  
+  /*
+  .wrapper {
+    height: 100vh;
+  }
+*/
+
+  #WS1{
+    position: absolute;
+    top: 7%;
+    left: 35%;
+    display: block;
+    
+  }
+
+  #WS2{
+    position: absolute;
+    top: 7%;
+    left: 46%;
+    display: block;
+  }
+
+  #WS3{
+    position: absolute;
+    top: 7%;
+    left: 56%;
+    display: block;
+  }
+
+ 
+  #WS{
+    position: absolute;
+    top: 15%;
+    left: 44.5%;
+    display: block;
+  }
+ 
+
+  #LF1{
+    position: absolute;
+    top: 23%;
+    left: 35%;
+    display: block;
+  }
+
+  #LF2{
+    position: absolute;
+    top: 24%;
+    left: 46.5%;
+    display: block;
+  }
+
+  #LF3{
+    position: absolute;
+    top: 24%;
+    left: 56.3%;
+    display: block;
+  }
+
+  #LF{
+    position: absolute;
+    top: 31%;
+    left: 44%;
+    display: block;
+  }
+
+  #SR1{
+    position: absolute;
+    top: 39%;
+    left: 35%;
+    display: block;
+  }
+
+  #SR2{
+    position: absolute;
+    top: 39%;
+    left: 44.7%;
+    display: block;
+  }
+
+  #SR3{
+    position: absolute;
+    top: 39%;
+    left: 56.3%;
+    display: block;
+  }
+
+  #SR{
+    position: absolute;
+    top: 47%;
+    left: 44%;
+    display: block;
+  }
+
+
+  #UU1{
+    position: absolute;
+    top: 56%;
+    left: 35%;
+    display: block;
+  }
+
+  #UU2{
+    position: absolute;
+    top: 56%;
+    left: 44.7%;
+    display: block;
+  }
+
+  #UU3{
+    position: absolute;
+    top: 56%;
+    left: 56.3%;
+    display: block;
+  }
+
+  #UU{
+    position: absolute;
+    top: 64%;
+    left: 45.5%;
+    display: block;
+  }
+
+
+  #A1{
+    position: absolute;
+    top: 75%;
+    left: 35%;
+    display: block;
+  }
+
+  #A2{
+    position: absolute;
+    top: 75%;
+    left: 44.2%;
+    display: block;
+  }
+
+  #A3{
+    position: absolute;
+    top: 75%;
+    left: 56.3%;
+    display: block;
+  }
+
+  #A{
+    position: absolute;
+    top: 84%;
+    left: 46.8%;
+    display: block;
+  }
+
+
+#LF1:hover, #LF2:hover, #LF3:hover {
+    filter: drop-shadow(0 0 0.1rem rgba(255, 0, 255, 0.5));
+    box-shadow: inset 0px 0px 5rem 0.5rem  rgba(255, 0, 255, 0.5) ,  0px 0px 5rem 1.7rem  rgba(255, 0, 255, 1);
+    border-radius: 200px 200px 200px 200px;
+}
+
+#SR1:hover, #SR2:hover, #SR3:hover {
+    filter: drop-shadow(0 0 0.1rem rgba(100, 255, 100, 0.78)); 
+    box-shadow: inset 0px 0px 5rem 0.5rem  rgba(100, 255, 100, 0.78) ,  0px 0px 5rem 1.7rem  rgba(100, 255, 100, 1);
+    border-radius: 200px 200px 200px 200px;
+}
+
+#WS1:hover, #WS2:hover, #WS3:hover {
+    filter: drop-shadow(0 0 0.5rem rgba(255, 0, 0, 0.5));
+    box-shadow: inset 0px 0px 5rem 0.5rem  rgba(255, 0, 0, 0.5) ,  0px 0px 5rem 1.7rem  rgba(255, 0, 0, 1);
+    border-radius: 200px 200px 200px 200px;
+}
+
+#UU1:hover, #UU2:hover, #UU3:hover {
+  filter: drop-shadow(0 0 0.1rem rgba(1, 1, 107, 0.5));
+  box-shadow: inset 0px 0px 5rem 1rem  rgba(1, 1, 107, 0.5)  ,  0px 0px 5rem 1.7rem  rgba(1, 1, 107, 1);
+  border-radius: 200px 200px 200px 200px;
+}
+
+
+#A1:hover, #A2:hover, #A3:hover {
+  filter: drop-shadow(0 0 0.1rem rgba(82, 63, 255, .5));
+  box-shadow: inset 0px 0px 5rem 1rem  rgba(82, 63, 255, .5)  ,  0px 0px 5rem 1.7rem  rgba(82, 63, 255, 1);
+  border-radius: 200px 200px 200px 200px;
+}
+
+
+.home {
+  float: right;
+  padding: 5px;
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+}
+  
+#home:hover {
+  filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 1));
+}

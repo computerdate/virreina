@@ -1,0 +1,46 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  user-select: none;
+  cursor:url('cur1.png'), auto;
+  }
+
+a:hover, a:active, a:visited{
+  cursor:url('cur1.png'), auto;
+}
+
+html{
+  overflow: hidden;
+ }
+
+body {
+  background-color: white;
+  /*background-image: url('');*/
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  place-items: center center;
+  }
+
+
+
+
+  h2{
+    font-family: 'Xanh Mono', monospace;
+    font-size: 8.5vw;
+    color: rgba(82, 63, 255, 1);
+    background-color: white;
+    text-align: right;
+    line-height: 1.5;
+    position: absolute;
+    padding: 3%;
+    box-shadow: rgba(82, 63, 255, 1) -100px 100px 200px; 
+    left: 20%;
+    top: 0px;
+    right: auto;
+    
+  }

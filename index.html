@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<head>
+<title> 🟄 virreina 🟄 </title>
+<meta name="description" content="artes de la campo al compu">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="og:title" property="og:title" content="virreina" />
+<meta name="og:description" property="og:description" content="artes de la campo al compu" />
+<meta property="og:image" content="https://d2w9rnfcy7mm78.cloudfront.net/12135839/original_97e1ca3aaac203789ef1c9b134824eff.png?1622496251?bc=0" />
+<link rel="shortcut icon" href="https://d2w9rnfcy7mm78.cloudfront.net/12135839/original_97e1ca3aaac203789ef1c9b134824eff.png?1622496251?bc=0">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<body>
+
+    <div id="container">
+        <iframe src="" 
+        frameborder="0" 
+        marginheight="0" 
+        marginwidth="0" 
+        width="100%" 
+        height="100%" 
+        scrolling="none" display: none"></iframe>
+          <audio id="player" autoplay loop>
+              <source src="videos/intro.mp3" type="audio/mp3">
+          </audio>
+          <video id="myVideo" autoplay loop muted id="myVideo">
+              <source src="videos/intro.mp4" type="video/mp4">
+          </video>
+        </div>
+
+    <script>
+        document.querySelector('#container').setAttribute("onclick", "location.href='home/index.html'");
+
+        if (screen.width <= 500) {
+        document.location = 'movil/index.html';
+        }
+      </script>
+
+
+
+
+<script>
+    function clock() {
+  var time = new Date(),
+      hours = time.getHours(),
+      minutes = time.getMinutes(),
+      seconds = time.getSeconds();
+  document.querySelectorAll('.clock')[0].innerHTML = harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
+    function harold(standIn) {
+      if (standIn < 10) {
+        standIn = '0' + standIn
+      }
+      return standIn;
+    }
+  }
+  setInterval(clock, 1000);
+
+
+  </script>
+
+
+
+<div class="dropmenu">
+    <a href="./home/index.html" target="">
+      <img src="./assets/Logotipo_Negro.svg"
+      alt="Apostrophe" height="60px" width="60px" ;="">
+    </a>
+  </div>
+
+  <div class="home">
+    <a href="./home/index.html" target="">
+      <h3>[X]</h3>    
+    </a>
+</div>
+
+
+<div class="clock">
+    <a href="./home/index.html" target=""></a>
+
+    <!--
+    <script>
+        var currentDate = new Date()
+        var day = currentDate.getDate()
+        var month = currentDate.getMonth() + 1
+        var year = currentDate.getFullYear()
+        document.write("<b>" + day + "/" + month + "/" + year + "</b>")
+    </script>
+
+        <h1>38.4161° S,69.6167° W</h1>
+    -->
+</div>
+
+
+
+
+
+
+
+
+<div class="fullscreen">
+    <div class="video">
+        <div class="vimeo-wrapper">
+        <iframe src="https://player.vimeo.com/video/707819851?h=2eec79b159&autoplay=0&loop=1&title=0&byline=0&portrait=0&controls=0&playsinline=1&muted=0" width="480" height="320" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+
+
+
+<footer>    
+      <div class="marquee">
+        <div class="marquee__content">
+          <ul class="list-inline">
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+          </ul>
+          <ul class="list-inline">
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+          </ul>
+          <ul class="list-inline">
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+          </ul>
+        </div>
+      </div>
+  </footer>
+     
+
+
+
+</html>
