@@ -1,0 +1,82 @@
+
+@font-face {
+    font-family: 'self_moderntext';
+    src: url('fonts/bretagne_self-modern_text-webfont.woff2') format('woff2'),
+         url('fonts/bretagne_self-modern_text-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'helvetica_roundedblack';
+    src: url('fonts/helvetica_rounded_black-webfont.woff2') format('woff2'),
+         url('fonts/helvetica_rounded_black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'space_monoregular';
+    src: url('fonts/spacemono-regular-webfont.woff2') format('woff2'),
+         url('fonts/spacemono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'zigzagnot_rounded';
+    src: url('fonts/zigzag-notrounded-webfont.woff2') format('woff2'),
+         url('fonts/zigzag-notrounded-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+#blur {
+    font-size: 10em;
+    color: transparent;
+    text-shadow: 0 0 .15em #000;
+  }
+
+#typeface1 {
+    font-family: 'self_moderntext';
+    font-size: 6em;
+    color: black;
+    /*text-shadow: 0 0 .15em #000;*/
+  }
+
+
+  #typeface2 {
+    font-family: 'helvetica_roundedblack';
+    font-size: 6em;
+    color: black;
+    /*text-shadow: 0 0 .15em #000;*/
+  }
+
+
+  #typeface3 {
+    font-family: 'space_monoregular';
+    font-size: 6em;
+    color: black;
+    /*text-shadow: 0 0 .15em #000;*/
+  }
+
+  #typeface4 {
+    font-family: 'zigzagnot_rounded';
+    font-size: 6em;
+    color: black;
+    /*text-shadow: 0 0 .15em #000;*/
+  }
