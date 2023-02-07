@@ -8,80 +8,144 @@
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <meta name="og:title" property="og:title" content="virreina" />
 <meta name="og:description" property="og:description" content="artes de la campo al compu" />
-<meta property="og:image" content="./assets/[VRN]Logos-23.png" />
-<link rel="shortcut icon" href="./assets/[VRN]Logos-23.png">
+<meta property="og:image" content="./assets/[VRN]Logo/[VRN]Logos-27.png" />
+<link rel="shortcut icon" href="./assets/[VRN]Logo/[VRN]Logos-27.png">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="style.css">
 
 
-
-<script>
-  document.querySelector('#container').setAttribute("onclick", "location.href='home/index.html'");
-
-  if (screen.width <= 500) {
-  document.location = 'movil/index.html';
-  }
-</script>
-
-
-
-
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Feb 7, 2023 10:00:00").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-// Get today's date and time
-var now = new Date().getTime();
-
-// Find the distance between now and the count down date
-var distance = countDownDate - now;
-
-// Time calculations for days, hours, minutes and seconds
-var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-// Output the result in an element with id="demo"
-document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-+ minutes + "m " + seconds + "s ";
-
-// If the count down is over, write some text 
-if (distance < 0) {
-clearInterval(x);
-document.getElementById("demo").innerHTML = "Now performing";
-}
-}, 1000);
-</script>
-
-
 <body>
-  <p id="demo"></p>
+
+    <div id="container">
+        <iframe src="" 
+        frameborder="0" 
+        marginheight="0" 
+        marginwidth="0" 
+        width="100%" 
+        height="100%" 
+        scrolling="none" display: none"></iframe>
+          <audio id="player" autoplay loop>
+              <source src="assets/VIRREINA FINAL AUDIO INTRO.mp3" type="audio/mp3">
+          </audio>
+          <video id="myVideo" autoplay loop muted id="myVideo">
+              <source src="assets/vrn_intro_v2 (720p).mp4" type="video/mp4">
+          </video>
+        </div>
+
+    <script>
+        document.querySelector('#container').setAttribute("onclick", "location.href='./proyectos/11_MiguelCintaRobles_/index.html.html'");
+
+        if (screen.width <= 500) {
+        document.location = 'movil/index.html';
+        }
+      </script>
+
+
+
+<!--
+<script>
+    function clock() {
+  var time = new Date(),
+      hours = time.getHours(),
+      minutes = time.getMinutes(),
+      seconds = time.getSeconds();
+  document.querySelectorAll('.clock')[0].innerHTML = harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
+    function harold(standIn) {
+      if (standIn < 10) {
+        standIn = '0' + standIn
+      }
+      return standIn;
+    }
+  }
+  setInterval(clock, 1000);
+
+
+  </script>
+-->
+
+
+<div class="dropmenu">
+    <a href="./proyectos/11_MiguelCintaRobles_/index.html" target="">
+      <img src="./assets/[VRN]Logo/[VRN]Logos-17.svg"
+      alt="VRN" height="" width="100px" ;="">
+    </a>
+  </div>
 
   <!--
+  <div class="home">
+    <a href="./home/index.html" target="">
+      <h3>[X]</h3>    
+    </a>
+</div>
+
+
+<div class="clock">
+    <a href="./home/index.html" target=""></a>
+
+  -->
+
+    <!--
+    <script>
+        var currentDate = new Date()
+        var day = currentDate.getDate()
+        var month = currentDate.getMonth() + 1
+        var year = currentDate.getFullYear()
+        document.write("<b>" + day + "/" + month + "/" + year + "</b>")
+    </script>
+
+        <h1>38.4161° S,69.6167° W</h1>
+    -->
+</div>
+
+
+
+
+
+
+<!--
+
 <div class="fullscreen">
-  <div class="video">
-      <div class="vimeo-wrapper">
-      <iframe src="https://player.vimeo.com/video/707819851?h=2eec79b159&autoplay=1&loop=1&title=0&byline=0&portrait=0&controls=0&playsinline=1&muted=1" width="480" height="320" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      </div>
-  </div>
+    <div class="video">
+        <div class="vimeo-wrapper">
+        <iframe src="https://player.vimeo.com/video/707819851?h=2eec79b159&autoplay=0&loop=1&title=0&byline=0&portrait=0&controls=0&playsinline=1&muted=0" width="480" height="320" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+    </div>
 </div>
 -->
-<div class="dropmenu">
-  <a href="" target="">
-    <img src="./assets/[VRN]Logos-19.svg"
-    alt="VRN" height="" width="200px" ;="">
-  </a>
-</div>
 
 </body>
 
 
-
+<!--
+<footer>    
+      <div class="marquee">
+        <div class="marquee__content">
+          <ul class="list-inline">
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+          </ul>
+          <ul class="list-inline">
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+          </ul>
+          <ul class="list-inline">
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+            <li><a href="./home/index.html" target="">OPEN CALL</li>
+          </ul>
+        </div>
+      </div>
+  </footer>
+-->
 
 
 
