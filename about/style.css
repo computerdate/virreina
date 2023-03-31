@@ -1,23 +1,139 @@
+html{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 body {
-    background-image: url("../../assets/fondo.png");
-    background-color: none;
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100%;
-    font-family: 'Dia', helvetica, arial, sans-serif;
-    font-family: 'Gilda Display', serif;
-    font-family: 'Manrope', sans-serif;
-    font-family: 'Noto Sans Mono', monospace;
-    font-family: 'Playfair Display', serif;
-    font-style: normal;
-    font-size: 0.8vw;  
-    color: none;
-    overflow: hidden;
-         
-    }
+  background-image: url("../assets/fondo.png");
+  /*background-color: rgb(195, 195, 195);*/
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  font-family: 'Dia', helvetica, arial, sans-serif;
+  font-family: 'Gilda Display', serif;
+  font-family: 'Manrope', sans-serif;
+  font-family: 'Noto Sans Mono', monospace;
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-size: 0.8vw;  
+  color: none;
+
+       
+  }
+
+
+header{
+  background-color: white;
+  width: 100%;
+  padding: none;
+  left: 0%;
+}
+
+
+
+
+/* reloj */
+.clock {
+  position: absolute;
+  padding: 2%;
+  align-items: center;
+  top: 0%;
+  left: 40%;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  pointer-events: none;
+  overflow: hidden;
+  color: black;
+  font-size: 1vw; 
+  font-family: 'Dia', helvetica, arial, sans-serif;
+  background-color: none;
+}
+
+
+/* burrito */
+.lol {
+  position: absolute;
+  padding: 1%;
+  align-items: center;
+  top: 85%;
+  left: 94%;
+  width: 50%;
+  height: 100%;
+  z-index: 1000;
+}
+
+
+.seccion {
+  position: absolute;
+  padding: 2%;
+  align-items: center;
+  top: -1%;
+  left: 90%;
+  width: 50%;
+  height: 100%;
+  z-index: 1000;
+  overflow: hidden;
+  color: black;
+  font-size: 1vw; 
+  font-family: 'Dia', helvetica, arial, sans-serif;
+  background-color: none;
+}
+
+
+
+
+.seccion a{
+  color: black;
+}
+
+
+/* idioma */
+.idioma {
+  position: absolute;
+  padding: 1%;
+  align-items: center;
+  top: 85%;
+  left: 1%;
+  width: 50%;
+  height: 100%;
+  z-index: 1000;
+  color: red;
+  font-size: 1vw; 
+  font-family: 'Dia', helvetica, arial, sans-serif;
+  background-color: none;
+}
+
+
+.idioma a{
+  color: red;
+  font-size: 1vw; 
+  font-family: 'Dia', helvetica, arial, sans-serif;
+  background-color: none;
+}
+
+
+/* IP */
+.IPaddress {
+  position: fixed;
+  padding: 2%;
+  align-items: center;
+  top: -50%;
+  left: 70%;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  pointer-events: none;
+  overflow: hidden;
+  color: black;
+  font-size: 1vw; 
+  font-family: 'Dia', helvetica, arial, sans-serif;
+  background-color: none;
+}
+
 
 
     
@@ -133,7 +249,7 @@ a:link {
         padding: 2%;
         align-items: center;
         top: 0%;
-        left: 33%;
+        left: 47%;
         width: 100%;
         height: 100%;
         z-index: 100;
@@ -143,6 +259,7 @@ a:link {
         font-size: 0.8vw; 
         font-family: 'Dia', helvetica, arial, sans-serif;
         background-color: none;
+        
     }
 
 
@@ -184,7 +301,7 @@ a:link {
         top: 10%;
         left: 30%;
         width: fit-content;
-        max-height: 100%;
+        max-height: 70%;
         z-index: 1000;
         cursor: auto;
         }
@@ -211,11 +328,11 @@ a:link {
 
       #T0{
         /*font-family: 'Dia', helvetica, arial, sans-serif;*/
-        background-color: white;
+        background-color: none;
         line-height: 1.2;
         position: fixed;
         max-width: 80%;
-        padding: 5%;
+        padding: 3%;
         border: none;
         left: 7.5%;
         top: 10%;
@@ -233,6 +350,92 @@ a:link {
             }
     
 
-            
+     
+        
+            ul{
+              color: rgba(0, 0, 0, 1);
+              font-size: 1.8vw;
+              text-align: center;
+              font-style: normal;
+              font-family: 'Dia', helvetica, arial, sans-serif;
+              padding-top: 5px;
+              padding-bottom: 5px;
+              }
+
+              
+.marquee a:link {
+  color:white;
+  text-decoration: none;
+  background-color: none;
+  }
+  .marquee a:visited {
+  color:white;
+  text-decoration: none;
+  background-color: none;
+  }
+  .marquee a:hover {
+  color:white;
+  text-decoration: underline;
+  background-color: none;
+  }
+       
 
             
+.marquee {
+  margin: 0 auto;
+  width: 100%;
+  height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 1%;
+  left: 0%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: black;
+}
+.marquee:before,
+.marquee:after {
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 30px;
+  content: "";
+  z-index: 1;
+}
+.marquee:before {
+  left: 0;
+  background: linear-gradient(to right, #ccc 10%, transparent 80%);
+}
+.marquee:after {
+  right: 0;
+  background: linear-gradient(to left, #ccc 10%, transparent 80%);
+}
+.marquee__content {
+  width: 300%;
+  display: flex;
+  line-height: 30px;
+  animation: marquee 15s linear infinite forwards;
+}
+.marquee__content:hover {
+  animation-play-state: paused;
+}
+.list-inline {
+  display: flex;
+  justify-content: space-around;
+  width: 33.33%;
+  /* reset list */
+  list-style: none;
+  padding: 0;
+  
+  margin: 0;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-66.6%);
+  }
+}
