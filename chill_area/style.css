@@ -1,0 +1,188 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  user-select: none;
+  }
+
+body {
+  background-image: url("./assets/fondo.jpg");
+  /*background-color: white;*/
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  place-items: center center;
+  overflow: hidden;
+  }
+  
+#P1, #P2, #P3, #P4, #M1, #M2, #R1, #F1  { 
+    border: none;
+    background-color: none;
+    display: block;
+    align-items: center center;
+    place-items: center center;
+    float: left;
+    background-color: transparent;
+    
+    }
+
+
+  .ui-widget-content, .rojo {
+    position: absolute;
+    display: none;
+    top: 3%;
+    left: 3%;
+
+  }
+  
+  .ui-widget-content:hover+.rojo {
+    display: block;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+  }
+  
+  
+  .hidden {
+    display: none;
+  }
+  
+
+  #P1{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    display: block;
+  }
+
+
+  #P2{
+    position: absolute;
+    top: 90%;
+    left: 95%;
+    display: block;
+  }
+
+
+  #P3{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    display: block;
+  }
+
+  #P4{
+    position: absolute;
+    top: 70%;
+    left: 66%;
+    display: block;
+  }
+
+
+  #M1{
+    position: absolute;
+    top: 15%;
+    left: 75%;
+    display: block;
+  }
+
+  #M2{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    display: block;
+  }
+
+  #F1{
+    position: absolute;
+    top: 66%;
+    left: 75%;
+    display: block;
+  }
+
+  #R1{
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    display: block;
+  }
+
+
+#P1:hover, #P2:hover, #P3:hover, #P4:hover, #M1:hover, #M2:hover, #F1:hover, #R1:hover {
+    filter: drop-shadow(0 0 1rem rgba(255, 0, 0, 1));
+    border-radius: 200px 200px 200px 200px;
+    cursor: grab;
+}
+
+
+a{
+  cursor: grab;
+}
+
+
+
+/*slider opencall*/
+
+/*
+
+.marquee {
+  margin: 0 auto;
+  width: 100%;
+  height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  background-color: black;
+}
+.marquee:before,
+.marquee:after {
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 30px;
+  content: "";
+  z-index: 1;
+}
+.marquee:before {
+  left: 0;
+  background: linear-gradient(to right, #ccc 10%, transparent 80%);
+}
+.marquee:after {
+  right: 0;
+  background: linear-gradient(to left, #ccc 10%, transparent 80%);
+}
+.marquee__content {
+  width: 300%;
+  display: flex;
+  line-height: 30px;
+  animation: marquee 15s linear infinite forwards;
+}
+.marquee__content:hover {
+  animation-play-state: paused;
+}
+.list-inline {
+  display: flex;
+  justify-content: space-around;
+  width: 33.33%;
+  /* reset list */
+  /*
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-66.6%);
+  }
+}
+
+/*
