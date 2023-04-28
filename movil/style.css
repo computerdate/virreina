@@ -1,9 +1,9 @@
 
   body {
-    background-image: url("../assets/fondovaqueri.jfif");
+    background-image: url("../assets/vrn_movil.png");
     /*background-color: white;*/
     background-size: contain;
-    background-position: center center;
+    background-position: left center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
