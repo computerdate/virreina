@@ -1,0 +1,52 @@
+
+  body {
+    background-image: url("../assets/vrn_movil.png");
+    /*background-color: white;*/
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    font-family: 'Dia', helvetica, arial, sans-serif;
+    font-style: normal;
+    font-size: 9vw;  
+    color: white;
+    overflow: auto;    
+    }
+
+
+
+  
+    
+  .dropmenu {
+    float: left;
+    padding: 5px;
+    position: fixed;
+    bottom: 0%;
+    right: 5%;
+    max-width: 60%;
+    font-size: 1.5vw;
+    z-index: 100;
+  }
+    
+  #dropmenu:hover {
+    filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
+  }
+
+
+
+  .OpenCall a {
+    display: inline-block;
+    color: #fff;
+    font-size: 6vh; 
+    font-family: 'Dia', helvetica, arial, sans-serif;
+    position: fixed;
+    top: 7%;
+    left: 0%;
+    z-index: 1000;
+    text-shadow: 0 0 10px #ff0000;
+    text-decoration: underline;
+    writing-mode: vertical-rl;text-orientation: mixed;
+  
+  }
