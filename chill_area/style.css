@@ -17,6 +17,49 @@ body {
   place-items: center center;
   overflow: hidden;
   }
+
+  h2{
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.5vw;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: white;
+    text-align: left;
+    line-height: 1.5;
+    position: fixed;
+    padding: 1%;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    box-shadow: rgba(0, 0, 255, 1) -100px 100px 200px; 
+    left: 0%;
+    top: 0%;
+    right: auto;
+    }
+
+    a:link {
+      color: black;
+      text-decoration: underline;
+    }
+    
+    /* visited link */
+    a:visited {
+      color: black;
+    }
+    
+    /* mouse over link */
+    a:hover {
+      color: black;
+      
+      text-shadow: 0 0 8px #000;
+      
+    }
+    
+    /* selected link */
+    a:active {
+      color: black;
+      
+    }
+  
+
   
 #P1, #P2, #P3, #P4, #M1, #M2, #R1, #F1  { 
     border: none;
