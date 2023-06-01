@@ -31,6 +31,23 @@
       }
 
 
+
+   
+    .parcela {
+        float: left;
+        padding: 5px;
+        position: fixed;
+        bottom: 5%;
+        left: 2%;
+        font-size: 1.5vw;
+        z-index: 100;
+      }
+        
+      #parcela:hover {
+        filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
+      }
+
+
       
 #myVideo {
   object-fit: cover;
