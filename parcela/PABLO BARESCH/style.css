@@ -1,6 +1,6 @@
 html{
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 body {
@@ -64,7 +64,7 @@ header{
   left: 90%;
   width: 50%;
   height: 100%;
-  z-index: 1000;
+  z-index: 10001;
   overflow: hidden;
   color: black;
   font-size: 1vw; 
@@ -83,7 +83,7 @@ header{
   right: 0%;
   height: fit-content;
   max-height: 100%;
-  z-index: 100;
+  z-index: 1000;
   background-color: white;
 }       
 .banner:hover {
@@ -97,7 +97,7 @@ header{
 .ID {
   display: none;
   width: 70%;
-  z-index: 100000;
+  z-index: 10000000;
 }
 .tituloprojecto:hover+.ID  {
   display: inline-block;
@@ -123,6 +123,7 @@ header{
         height: 100%;
         z-index: -100; 
         transform: translate(50% 50%); 
+        filter: grayscale(30%);
     }
   
     
@@ -230,27 +231,29 @@ a-scene {
 
   .marquee {
     margin: 20px;
-    max-width: 20%;
+    max-width: 40%;
     height: 25px;
-    width: 420px;
+    width: 100%;
     z-index: 1000;
-    font-family: 'Playfair Display', serif;
-    font-size: 1vw;
-    background-color: blue;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5vw;
+    text-align: center;
+    background-color: none;
     color: azure;
     overflow: hidden;
     position: fixed;
-    top: 83%;
-    left: 37%;
+    top: 80%;
+    left: 40%;
+    
   }
   
   .marquee div {
-    display: block;
+    display: flex;
     width: 200%;
-    height: 30px;
+    height: 25px;
     position: absolute;
     overflow: hidden;
-    animation: marquee 5s linear infinite;
+    /*animation: marquee 5s linear infinite;*/
   }
   
   .marquee span {
@@ -284,6 +287,5 @@ a-scene {
         height: 720px;
     }
   }
-
 
 
