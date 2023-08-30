@@ -312,6 +312,13 @@ th {
 
 /*IDs Hovers*/
 
+.Happy:hover{
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  background-image: url("./PEIYUUUUE/assets/ID_PEIYUUUUE.png");
+}
+
 .Pablo:hover{
   background-repeat: no-repeat;
   background-position: left top;
