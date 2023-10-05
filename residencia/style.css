@@ -95,7 +95,7 @@ header{
 
     /* Dropdown Button */
 .dropbtn {
-  background-color: none;
+  background-color: transparent;
   color: grey;
   padding-left: 5px;
   font-size: 16px;
