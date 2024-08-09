@@ -311,6 +311,13 @@ th {
 
 
 /*IDs Hovers*/
+.Journée:hover{
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  background-image: url("./KATERINE DM/assets/ID_KaterineDM.png");
+}
+
 
 .TheGarden:hover{
   background-repeat: no-repeat;
