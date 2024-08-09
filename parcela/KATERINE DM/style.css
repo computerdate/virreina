@@ -37,9 +37,14 @@ html{
   
   header{
     background-color: white;
+    position: fixed;
     width: 100%;
-    padding: none;
-    left: 0%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    left: -10%;
+    top: -2%;
+    z-index: 10;
+
   }
   
   
@@ -74,7 +79,7 @@ html{
     left: 90%;
     width: 50%;
     height: 100%;
-    z-index: 1000;
+    z-index: 10000;
     overflow: hidden;
     color: black;
     font-size: 1vw; 
@@ -89,13 +94,15 @@ html{
     float: left;
     padding-left: 1%;
     position: fixed;
-    top: 5%;
+    top: 0%;
     right: 0%;
     height: fit-content;
     max-height: 100%;
+    min-height: 100%;
     z-index: 100;
     background-color: white;
   }       
+
   .banner:hover {
     filter: drop-shadow(0 0 .5rem rgb(255, 251, 0));
   }
@@ -183,16 +190,6 @@ html{
       z-index: 10;    
       object-fit: cover;
   }
-    
-  .BCK3 {
-    position: absolute;
-    top: 10%;
-    left: 00%;
-    width: 700%;
-    height: 100%;
-    z-index: 50;    
-    object-fit: cover;
-}
 
 .BCK4 {
   position: absolute;
@@ -224,6 +221,7 @@ html{
     border: none;
     border-radius: 8px;
     font-size: 1.5vw;
+    top: 0%;
     z-index: 1000;
     position: fixed;
   }
@@ -237,13 +235,14 @@ html{
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
-    position: absolute;
+    position: relative;
     background-color: none;
+    top: 10%;
     font-family: 'Manrope', sans-serif;
     color: #000;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 1000;
   }
   
   /* Links inside the dropdown */
@@ -302,4 +301,152 @@ html{
     font-family: 'Manrope', sans-serif;
   }
   
+  
+
+  
+
+.vimeo-wrapper {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.vimeo-wrapper iframe {
+  width: 100vw;
+  height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  min-height: 100vh;
+  min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.horizontal-scroll-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vh;
+  transform: rotate(-90deg) translate3d(0, -100vh, 0); 
+  /* creates the horizontal scrolling effect */
+  transform-origin: right top;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+  height: 100vw;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  padding-bottom: 10rem;
+}
+
+
+
+
+
+
+
+.viewport {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.parallax-parent {
+  position: relative;
+  top: 100vh;
+  left: 0;
+  width: 100vh;
+  height: 100vw;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-perspective-origin: 50% 50% 0;
+          perspective-origin: 50% 50% 0;
+  -webkit-perspective: 3px;
+          perspective: 3px;
+}
+
+.parallax-parent::-webkit-scrollbar {
+  display: none;
+}
+
+.background-colors {
+  position: relative;
+  width: 100vh;
+  height: 300vw;
+  transform: rotate(-90deg) translate3d(0, -100vh, 0); 
+}
+
+
+.parallax-child-container {
+  position: absolute;
+  width: 110%;
+  height: 1500%;
+  overflow: hidden;
+  left: -7%;
+  z-index: 1;
+}
+   
+.parallax-child {
+  position: fixed;
+  top: 20%;
+  left: 45%;
+  width: 100vh;
+  
+  -webkit-transform-origin: 50% 50% 0;
+          transform-origin: 50% 50% 0;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+          transform: translateX(-50%) translateY(-50%) rotate(90deg);
+}
+
+.BCK3 {
+  top: 10%;
+  left: -100%;
+  width: auto;
+  height: 100vh;
+  z-index: 10;    
+  object-fit: cover;
+
+}
+
+.parallax-foreground {
+  position: fixed;
+  top: -25%;
+  left: 60%;
+  width: 100vh;
+  z-index: 1000;
+  -webkit-transform-origin: 50% 50% 0;
+          transform-origin: 50% 50% 0;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+          transform: translateX(-50%) translateY(-50%) rotate(90deg);
+}
+
+
+
+
+.parallax-background {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  width: 300vw;
+  height: 100vh;
+  -webkit-transform: translateX(-50%) translateY(180%) translateZ(-8px) scale(2.5) rotate(90deg);
+          transform: translateX(-50%) translateY(180%) translateZ(-8px) scale(2.5) rotate(90deg);
+  z-index: 0;
+}
+
+
+
+
   
