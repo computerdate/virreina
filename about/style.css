@@ -1,6 +1,7 @@
 html{
   overflow-x: hidden;
   overflow-y: hidden;
+  cursor: crosshair;
 }
 
 body {
@@ -159,7 +160,7 @@ header{
 
       /* Dropdown Button */
 .dropbtn {
-  background-color: transparent;
+    background-color: none;
     color: grey;
     padding-left: 5px;
     font-size: 16px;

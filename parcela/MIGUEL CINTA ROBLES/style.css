@@ -659,7 +659,7 @@ height: 100vh;
 
       /* Dropdown Button */
       .dropbtn {
-        background-color: transparent;
+        background-color: none;
         color: grey;
         padding-left: 5px;
         font-size: 16px;
