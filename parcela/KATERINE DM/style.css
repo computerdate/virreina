@@ -189,7 +189,7 @@ html{
   /* banner ID */
   .banner {
     float: left;
-    padding-left: 1%;
+    padding-left: 3%;
     padding-bottom: 5%;
     position: fixed;
     top: 0%;
@@ -425,10 +425,11 @@ html{
 
 }
 
+
 .parallax-foreground {
   position: fixed;
-  top: 160%;
-  left: 60%;
+  top: 210%;
+  left: 50%;
   width: 1000vh;
   z-index: 1000;
   -webkit-transform-origin: 50% 50% 0;
@@ -443,17 +444,33 @@ html{
 .parallax-background {
   position: absolute;
   top: -500%;
-  left: 100%;
-  width: 300vw;
+  left: 50%;
+  width: 50vw;
+  height: 100vh;
+  padding-top: 5%;
+  -webkit-transform: translateX(-50%) translateY(180%) translateZ(-8px) scale(3) rotate(90deg);
+          transform: translateX(-50%) translateY(180%) translateZ(-8px) scale(3) rotate(90deg);
+  z-index: 0;
+}
+
+
+@media (width <= 1970px) {
+.parallax-background {
+  position: absolute;
+  padding-bottom: 10%;
+  top: -500%;
+  left: 70%;
+  width: 50vw;
   height: 100vh;
   -webkit-transform: translateX(-50%) translateY(180%) translateZ(-8px) scale(2.5) rotate(90deg);
           transform: translateX(-50%) translateY(180%) translateZ(-8px) scale(2.5) rotate(90deg);
   z-index: 0;
 }
+}
 
 
-
-@media (width = 2560px) {
+/* large screens */
+@media (width >= 2560px) {
   
   .parallax-foreground {
     position: fixed;
@@ -512,3 +529,68 @@ html{
   }
 
 }
+
+/*Katerine's Screen*/
+/* (width = 1080px) and  
+@media (height = 1980px){
+  
+  
+.parallax-foreground {
+  position: fixed;
+  top: 160%;
+  left: 60%;
+  width: 1000vh;
+  z-index: 1000;
+  -webkit-transform-origin: 50% 50% 0;
+          transform-origin: 50% 50% 0;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+          transform: translateX(-50%) translateY(-50%) rotate(90deg);
+}
+
+
+
+
+.parallax-background {
+  position: absolute;
+  top: -500%;
+  left: 100%;
+  width: 300vw;
+  height: 100vh;
+  -webkit-transform: translateX(-50%) translateY(180%) translateZ(-8px) scale(2.5) rotate(90deg);
+          transform: translateX(-50%) translateY(180%) translateZ(-8px) scale(2.5) rotate(90deg);
+  z-index: 0;
+}
+  
+
+  .banner {
+    float: left;
+    padding-left: 1%;
+    padding-bottom: 50%;
+    padding-top: 17%;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    height: fit-content;
+    max-height: 100%;
+    min-height: 100%;
+    z-index: 100;
+    background-color: white;
+  }       
+
+
+
+  header{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 60%;
+    left: -10%;
+    top: -20%;
+    z-index: 10;
+
+  }
+
+}
+  */
