@@ -1,0 +1,407 @@
+
+<!DOCTYPE html>
+<head>
+<title> 🟄 virreina 🟄 </title>
+<meta name="description" content="artes de la campo al compu">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="og:title" property="og:title" content="virreina" />
+<meta name="og:description" property="og:description" content="artes de la campo al compu" />
+<meta property="og:image" content="https://d2w9rnfcy7mm78.cloudfront.net/20258157/original_cb2d2cb2a0fa98eeceb439265532836d.png?1675757381?bc=0" />
+<link rel="shortcut icon" href="https://d2w9rnfcy7mm78.cloudfront.net/20258157/original_cb2d2cb2a0fa98eeceb439265532836d.png?1675757381?bc=0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Manrope:wght@500;600&family=Noto+Sans+Mono:wght@400;800&family=Playfair+Display:wght@500;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="LomaSerena_09_2024.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+
+
+
+<header>
+
+  <!--  menu  -->
+  <div class="dropdown">
+    <button class="dropbtn">
+        <a href="https://virreina.space/" target="">
+            <img src="../assets/[VRN]Logo/[VRN]Logos-01.svg" alt="VRN" height="" width="60px" ;="">
+        </a>
+    </button>
+    <div class="dropdown-content">
+      <a href="../residencia/index.html">RESIDENCIES</a>
+      <a href="../parcela/index.html">PARCELA</a>
+	  <a href="../soloshow/index.html">SOLOSHOW</a>
+      <!--
+      <a href="../screenings/index.html">Screenings</a>
+      -->
+      <a href="../about/index.html">ABOUT</a>
+    </div>
+  </div>   
+
+
+      <!--  reloj  -->
+      <div class="clock">
+    <script>
+        function clock() {
+      var time = new Date(),
+          hours = time.getHours(),
+          minutes = time.getMinutes(),
+          seconds = time.getSeconds();
+      document.querySelectorAll('.clock')[0].innerHTML = harold(hours) + ":" + harold(minutes) + ":" + harold(seconds);
+        function harold(standIn) {
+          if (standIn < 10) {
+            standIn = '0' + standIn
+          }
+          return standIn;
+        }
+      }
+      setInterval(clock, 1000);
+    </script>
+      </div>
+  
+</header>
+
+
+
+
+
+
+
+  <body>
+
+
+<!--  seccion  -->
+<div class="seccion">
+  <a href="" target="">
+      <!--
+    <img src="../../assets/[VRN]Logo/[VRN]Logos-06.svg"
+    alt="VRN" height="60px" width="" ;="">
+    -->
+    <p>RESIDENCIAS</p>
+  </a>
+</div>
+
+
+ 
+
+
+
+<!--  vid iframe  -->
+<div id="editions" class="ui-widget-content"> 
+🟄 09.2024</a>
+<br>
+<a href="./index.html" target="_self">↜</a>
+
+</div>
+
+
+
+
+<div class="imagegrid">
+  <a href="https://www.instagram.com/sauer.tristan/" target="_blank"><img src="./assetsLomaSerena/IV_Tristan.jpg"alt="VRN" height="360px" width="" ></a>
+
+  <a href="https://www.instagram.com/adrian_pijoan/" target="_blank"><img src="./assetsLomaSerena/IV_Adrian.jpg"alt="VRN" height="360px" width="" ;=""></a>
+
+  <a href="https://www.instagram.com/magda.onatra/" target="_blank"><img src="./assetsLomaSerena/IV_Magda.jpg"alt="VRN" height="360px" width="" ;=""></a>
+
+  <br><br>
+
+  <a href="https://www.instagram.com/zarzazorras/" target="_blank"><img src="./assetsLomaSerena/IV_Gabriela&Francisca.jpg"alt="VRN" height="360px" width="" ;=""></a>
+
+  <a href="https://www.instagram.com/marianroma___/" target="_blank"><img src="./assetsLomaSerena/IV_Marián.jpg"alt="VRN" height="360px" width="" ;=""></a>
+
+  
+  <a href="https://www.instagram.com/argammasa/" target="_blank"><img src="./assetsLomaSerena/IV_Sebas.jpg"alt="VRN" height="360px" width="" ;=""></a>
+
+  <br><br>
+
+</div>
+
+
+
+
+<script>
+    
+
+var colour="random"; // "random" can be replaced with any valid colour ie: "red"...
+var sparkles=100;// increase of decrease for number of sparkles falling
+
+var x=ox=400;
+var y=oy=300;
+var swide=800;
+var shigh=600;
+var sleft=sdown=0;
+var tiny=new Array();
+var star=new Array();
+var starv=new Array();
+var starx=new Array();
+var stary=new Array();
+var tinyx=new Array();
+var tinyy=new Array();
+var tinyv=new Array();
+
+colours=new Array('#ff0000','#00ff00','#ffffff','#ff00ff','#ffa500','#ffff00','#00ff00','#ffffff','ff00ff')
+
+n = 10;
+y = 0;
+x = 0;
+n6=(document.getElementById&&!document.all);
+ns=(document.layers);
+ie=(document.all);
+d=(ns||ie)?'document.':'document.getElementById("';
+a=(ns||n6)?'':'all.';
+n6r=(n6)?'")':'';
+s=(ns)?'':'.style';
+
+if (ns){
+	for (i = 0; i < n; i++)
+		document.write('<layer name="dots'+i+'" top=0 left=0 width='+i/2+' height='+i/2+' bgcolor=#ff0000></layer>');
+}
+
+if (ie)
+	document.write('<div id="con" style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+
+if (ie||n6){
+	for (i = 0; i < n; i++)
+		document.write('<div id="dots'+i+'" style="position:absolute;top:0px;left:0px;width:'+i/2+'px;height:'+i/2+'px;background:#ff0000;font-size:'+i/2+'"></div>');
+}
+
+if (ie)
+	document.write('</div></div>');
+(ns||n6)?window.captureEvents(Event.MOUSEMOVE):0;
+
+function Mouse(evnt){
+
+	y = (ns||n6)?evnt.pageY+4 - window.pageYOffset:event.y+4;
+	x = (ns||n6)?evnt.pageX+1:event.x+1;
+}
+
+(ns)?window.onMouseMove=Mouse:document.onmousemove=Mouse;
+
+function animate(){
+
+	o=(ns||n6)?window.pageYOffset:0;
+
+	if (ie)con.style.top=document.body.scrollTop + 'px';
+
+	for (i = 0; i < n; i++){
+
+		var temp1 = eval(d+a+"dots"+i+n6r+s);
+
+		randcolours = colours[Math.floor(Math.random()*colours.length)];
+
+		(ns)?temp1.bgColor = randcolours:temp1.background = randcolours; 
+
+		if (i < n-1){
+
+			var temp2 = eval(d+a+"dots"+(i+1)+n6r+s);
+			temp1.top = parseInt(temp2.top) + 'px';
+			temp1.left = parseInt(temp2.left) + 'px';
+
+		} 
+		else{
+
+			temp1.top = y+o + 'px';
+			temp1.left = x + 'px';
+		}
+	}
+
+	setTimeout("animate()",10);
+}
+
+animate();
+
+window.onload=function() { if (document.getElementById) {
+	var i, rats, rlef, rdow;
+	for (var i=0; i<sparkles; i++) {
+		var rats=createDiv(3, 3);
+		rats.style.visibility="hidden";
+		rats.style.zIndex="999";
+		document.body.appendChild(tiny[i]=rats);
+		starv[i]=0;
+		tinyv[i]=0;
+		var rats=createDiv(5, 5);
+		rats.style.backgroundColor="transparent";
+		rats.style.visibility="hidden";
+		rats.style.zIndex="999";
+		var rlef=createDiv(1, 5);
+		var rdow=createDiv(5, 1);
+		rats.appendChild(rlef);
+		rats.appendChild(rdow);
+		rlef.style.top="2px";
+		rlef.style.left="0px";
+		rdow.style.top="0px";
+		rdow.style.left="2px";
+		document.body.appendChild(star[i]=rats);
+	}
+	set_width();
+	sparkle();
+}}
+
+function sparkle() {
+	var c;
+	if (Math.abs(x-ox)>1 || Math.abs(y-oy)>1) {
+		ox=x;
+		oy=y;
+		for (c=0; c<sparkles; c++) if (!starv[c]) {
+			star[c].style.left=(starx[c]=x)+"px";
+			star[c].style.top=(stary[c]=y+1)+"px";
+			star[c].style.clip="rect(0px, 5px, 5px, 0px)";
+			star[c].childNodes[0].style.backgroundColor=star[c].childNodes[1].style.backgroundColor=(colour=="random")?newColour():colour;
+			star[c].style.visibility="visible";
+			starv[c]=50;
+			break;
+		}
+	}
+	for (c=0; c<sparkles; c++) {
+		if (starv[c]) update_star(c);
+		if (tinyv[c]) update_tiny(c);
+	}
+	setTimeout("sparkle()", 40);
+}
+
+function update_star(i) {
+	if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
+	if (starv[i]) {
+		stary[i]+=1+Math.random()*3;
+		starx[i]+=(i%5-2)/5;
+		if (stary[i]<shigh+sdown) {
+			star[i].style.top=stary[i]+"px";
+			star[i].style.left=starx[i]+"px";
+		}
+		else {
+			star[i].style.visibility="hidden";
+			starv[i]=0;
+			return;
+		}
+	}
+	else {
+		tinyv[i]=50;
+		tiny[i].style.top=(tinyy[i]=stary[i])+"px";
+		tiny[i].style.left=(tinyx[i]=starx[i])+"px";
+		tiny[i].style.width="2px";
+		tiny[i].style.height="2px";
+		tiny[i].style.backgroundColor=star[i].childNodes[0].style.backgroundColor;
+		star[i].style.visibility="hidden";
+		tiny[i].style.visibility="visible"
+	}
+}
+
+function update_tiny(i) {
+	if (--tinyv[i]==25) {
+		tiny[i].style.width="1px";
+		tiny[i].style.height="1px";
+	}
+	if (tinyv[i]) {
+		tinyy[i]+=1+Math.random()*3;
+		tinyx[i]+=(i%5-2)/5;
+		if (tinyy[i]<shigh+sdown) {
+			tiny[i].style.top=tinyy[i]+"px";
+			tiny[i].style.left=tinyx[i]+"px";
+		}
+		else {
+			tiny[i].style.visibility="hidden";
+			tinyv[i]=0;
+			return;
+		}
+	}
+	else tiny[i].style.visibility="hidden";
+}
+
+document.onmousemove=mouse;
+function mouse(e) {
+	if (e) {
+		y=e.pageY;
+		x=e.pageX;
+	}
+	else {
+		set_scroll();
+		y=event.y+sdown;
+		x=event.x+sleft;
+	}
+}
+
+window.onscroll=set_scroll;
+function set_scroll() {
+	if (typeof(self.pageYOffset)=='number') {
+		sdown=self.pageYOffset;
+		sleft=self.pageXOffset;
+	}
+	else if (document.body && (document.body.scrollTop || document.body.scrollLeft)) {
+		sdown=document.body.scrollTop;
+		sleft=document.body.scrollLeft;
+	}
+	else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+		sleft=document.documentElement.scrollLeft;
+		sdown=document.documentElement.scrollTop;
+	}
+	else {
+		sdown=0;
+		sleft=0;
+	}
+}
+
+window.onresize=set_width;
+function set_width() {
+	var sw_min=999999;
+	var sh_min=999999;
+	if (document.documentElement && document.documentElement.clientWidth) {
+		if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
+		if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
+	}
+	if (typeof(self.innerWidth)=='number' && self.innerWidth) {
+		if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
+		if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
+	}
+	if (document.body.clientWidth) {
+		if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
+		if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
+	}
+	if (sw_min==999999 || sh_min==999999) {
+		sw_min=800;
+		sh_min=600;
+	}
+	swide=sw_min;
+	shigh=sh_min;
+}
+
+function createDiv(height, width) {
+	var div=document.createElement("div");
+	div.style.position="absolute";
+	div.style.height=height+"px";
+	div.style.width=width+"px";
+	div.style.overflow="hidden";
+	return (div);
+}
+
+function newColour() {
+	var c=new Array();
+	c[0]=255;
+	c[1]=Math.floor(Math.random()*256);
+	c[2]=Math.floor(Math.random()*(256-c[1]/2));
+	c.sort(function(){return (0.5 - Math.random());});
+	return ("rgb("+c[0]+", "+c[1]+", "+c[2]+")");
+}
+// ]]>
+
+</script>
+
+    
+
+
+
+</body>
+
+<!--
+<footer>    
+</footer>
+-->
+
+
+</html>

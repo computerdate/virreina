@@ -339,15 +339,37 @@ a {
 
 
    
-#F1  { 
+#F1
+  { 
   width: 10%;
   max-width: 10%;
   top: 60%;
-  left: -50%;
+  left: -40%;
   display: block;
   z-index: 1000;
   }
 
+   
+  #F2
+  { 
+  width: 10%;
+  max-width: 10%;
+  top: 20%;
+  left: -160%;
+  display: block;
+  z-index: 1000;
+  }
+
+     
+#F3
+{ 
+width: 10%;
+max-width: 10%;
+top: 60%;
+left: -50%;
+display: block;
+z-index: 1000;
+}
 
 
 

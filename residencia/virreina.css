@@ -244,9 +244,10 @@ text-shadow: 0 0 10px #000;
 
 #pregunta3 {
   position: absolute;
-  left: 80%;
-  top: 80%;
+  left: 20%;
+  top: 50%;
   right: auto;
+  max-width: 50%;
 }
 
 #pregunta4 {
