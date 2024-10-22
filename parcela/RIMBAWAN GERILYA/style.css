@@ -1,226 +1,606 @@
 html{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  background-image: url("../../assets/fondo.png");
+  background-color: rgb(0,0,0);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  font-family: 'Dia', helvetica, arial, sans-serif;
+  font-family: 'Gilda Display', serif;
+  font-family: 'Manrope', sans-serif;
+  font-family: 'Noto Sans Mono', monospace;
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-size: 0.8vw;  
+  color: none;
+  }
+
+header{
+  background-color: black;
+  width: 100%;
+  padding: none;
+  left: 0%;
+}
+
+/* reloj */
+.clock {
+  position: absolute;
+  padding: 2%;
+  align-items: center;
+  top: 0%;
+  left: 45%;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  pointer-events: none;
+  overflow: hidden;
+  color: white;
+  font-size: .85vw; 
+  font-family: 'Dia', helvetica, arial, sans-serif;
+  background-color: none;
+}
+
+.seccion {
+  position: absolute;
+  padding: 2%;
+  align-items: center;
+  top: -1%;
+  left: 90%;
+  width: 50%;
+  height: 100%;
+  z-index: 1000;
+  overflow: hidden;
+  color: white;
+  font-size: 1vw; 
+  font-family: 'Manrope', sans-serif;
+  background-color: none;
+}
+
+/* banner ID */
+.banner {
+  float: left;
+  padding-left: 1%;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  height: fit-content;
+  max-height: 100%;
+  z-index: 100;
+  background-color: black;
+}     
+
+.banner:hover {
+  filter: drop-shadow(0 0 .5rem rgb(255, 0, 255));
+}
+
+.hover {
+  pointer-events: none;
+  display: inline-block;
+  position: absolute;
+}   
+
+.ID {
+  display: none;
+  width: 70%;
+  z-index: 100000;
+}
+
+.tituloprojecto:hover+.ID  {
+  display: inline-block;
+  position:absolute;
+  top: 35%;
+  left: -710%;
+  width: fit-content;
+  max-height: 100%;
+  z-index: 100000;
+}
+
+.JR:hover+.ID  {
+  display: inline-block;
+  position:absolute;
+  top: 35%;
+  left: -710%;
+  width: fit-content;
+  max-height: 100%;
+  z-index: 100000;
+}
+
+/* project */
+
+.asset0 {
+  position: absolute;
+  top: 5%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;    
+}
+
+
+.video1 {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;    
+}
+
+
+.asset1 {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;    
+}
+
+.video2 {
+  position: absolute;
+  top: 220%;
+  left: 20%;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;    
+}
+
+
+.asset2
+ {
+  position: absolute;
+  top: 300%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;    
+}
+
+.video3 {
+  position: absolute;
+  top: 430%;
+  left: 20%;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;    
+}
+
+
+.asset3
+ {
+  position: absolute;
+  top: 520%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;    
+}
+
+     
+.video4 {
+  position: absolute;
+  top: 610%;
+  left: 20%;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;    
+}
+
+.asset4
+ {
+  position: absolute;
+  top: 680%;
+  left: 2.5%;
+  width: 100%;
+  height: 100%;
+  z-index: 0;    
+}
+
+
+.asset5
+ {
+  position: absolute;
+  top: 930%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;    
+}
+
+
+.asset6
+ {
+  position: absolute;
+  animation: shake 2s ease infinite;
+  top: 970%;
+  left: 2.5%;
+  max-width: 10%;
+  height: auto;
+  z-index: 100000;   
+  }
+
+
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  color: grey;
+  padding-left: 5px;
+  font-size: 16px;
+  height: fit-content;
+  max-height: 30px;
+  position: inherit;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.5vw;
+  z-index: 1000;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: none;
+  font-family: 'Manrope', sans-serif;
+  color: #000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  font-family: 'Manrope', sans-serif;
+  padding-left: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  }
+  
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: black;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 0 0 3px #000;
+  }
+
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  text-shadow: 0 0 8px #000;
+}
+
+/* selected link */
+a:active {
+  color: black;
+  font-family: 'Manrope', sans-serif;
+}
+
+
+
+
+
+.marquee {
+  margin: 20px;
+  max-width: 90%;
+  height: 5vw;
+  width: 100%;
+  z-index: 1000;
+  font-family: "miniTRAIL";
+  font-size: 3vw;
+  text-align: center;
+  background-color: none;
+  color: azure;
+  overflow: hidden;
+  position: sticky;
+  top: 300%;
+  left: 20%;
+  z-index: 100;
+}
+
+
+.marquee div {
+  display: flex;
+  width: 210%;
+  height: 5vw;
+  position: absolute;
+  overflow: hidden;
+}
+
+.marquee span {
+  float: left;
+  width: 90%;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+
+
+
+footer{
+display: none;
+}
+
+
+footer marquee{
+  display: none;
+}
+ 
+
+
+
+
+
+
+
+/* Responsive styles 
+@media only screen and (max-width: 760px) 
+*/
+@media (width <= 760px) {
+
+ html{
+    overflow-y: auto;
     overflow-x: hidden;
-    overflow-y: hidden;
-  }
-  
-  body {
-    background-image: url("../../assets/fondo.png");
-    /*background-color: rgb(195, 195, 195);*/
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100%;
-    font-family: 'Dia', helvetica, arial, sans-serif;
-    font-family: 'Gilda Display', serif;
-    font-family: 'Manrope', sans-serif;
-    font-family: 'Noto Sans Mono', monospace;
-    font-family: 'Playfair Display', serif;
-    font-style: normal;
-    font-size: 0.8vw;  
-    color: none;
-  
-         
-    }
-  
-  
-  header{
-    background-color: white;
-    width: 100%;
-    padding: none;
-    left: 0%;
-  }
-  
-  
-  
-  /* reloj */
-  .clock {
-    position: absolute;
-    padding: 2%;
-    align-items: center;
-    top: 0%;
-    left: 45%;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    pointer-events: none;
-    overflow: hidden;
-    color: black;
-    font-size: .85vw; 
-    font-family: 'Dia', helvetica, arial, sans-serif;
-    background-color: none;
-  }
-  
-  
-  
-  
-  
-  .seccion {
-    position: absolute;
-    padding: 2%;
-    align-items: center;
-    top: -1%;
-    left: 90%;
-    width: 50%;
-    height: 100%;
-    z-index: 1000;
-    overflow: hidden;
-    color: black;
-    font-size: 1vw; 
-    font-family: 'Manrope', sans-serif;
-    background-color: none;
-  }
-  
-  
-  
-  /* banner ID */
-  .banner {
-    float: left;
-    padding-left: 1%;
-    position: fixed;
-    top: 5%;
-    right: 0%;
-    height: fit-content;
-    max-height: 100%;
-    z-index: 100;
-    background-color: white;
-  }       
-  .banner:hover {
-    filter: drop-shadow(0 0 .5rem rgb(255, 251, 0));
-  }
-  .hover {
-    pointer-events: none;
-    display: inline-block;
-    position: absolute;
-  }     
-  .ID {
-    display: none;
-    width: 70%;
-    z-index: 100000;
-  }
-  .tituloprojecto:hover+.ID  {
-    display: inline-block;
-    position:absolute;
-    top: 16%;
-    left: -680%;
-    width: fit-content;
-    max-height: 100%;
-    z-index: 100000;
-    }
-  
-  
-  
-  
-  
-  
-    /* project */
-    .video1 {
-        position: absolute;
-        top: 20%;
-        left: 20%;
-        width: 100%;
-        height: 100%;
-        z-index: 10;    
-    }
-    .video2 {
-        position: absolute;
-        top: 100%;
-        left: 20%;
-        width: 100%;
-        height: 100%;
-        z-index: 10;    
-    }
-    
-  
-  
-      /* Dropdown Button */
-  .dropbtn {
-    background-color: transparent;
-    color: grey;
-    padding-left: 5px;
-    font-size: 16px;
-    height: fit-content;
-    max-height: 30px;
-    position: inherit;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.5vw;
-    z-index: 1000;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: none;
-    font-family: 'Manrope', sans-serif;
-    color: #000;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    font-family: 'Manrope', sans-serif;
-    padding-left: 20px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
     background-color: #ddd;
-    color: black;
-    font-family: 'Manrope', sans-serif;
+ }
+
+
+ .clock {
+  font-size: 2vh; 
+  left: 40%;
+  top: 1%;
+  position: fixed;
+  }
+
+
+  .seccion {
+    font-size: 1.7vh; 
+    position: fixed;
+    left: 75%;
     }
-    
+
   
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-    color: black;
-    font-family: 'Playfair Display', serif;
-    text-shadow: 0 0 3px #000;
-    }
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown
-  .dropdown:hover .dropbtn {        filter: drop-shadow(0 0 .5rem rgb(0, 255, 0));
+  .dropbtn {
+  top: -1%;
+  position: fixed;
   }
-  */
-  
-  
-  /* unvisited link */
-  a:link {
-    color: black;
+
+  .dropdown-content {
+    font-size: 0px;
   }
+
+
+  .banner {
+    display: none;
+  } 
+
+.asset0 {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 3%;
+  height: auto;
+  max-width: 3%;
+  max-height: auto;
+  z-index: 10;  
+  transform: translate(-25%, -20%);
+}
+
+
+.video1 {
+  position: absolute;
+  top: 0%;
+  left: -90%;
+  min-width:100vh; width:100vh; max-width:100vh;
+  min-height:100vh; height:100vh; max-height:100vh;
+  z-index: 1000;    
+}
+
+.video1 iframe {
+  min-width:40vh; width:50vh; max-width:60vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -70%);
+}
+
+
+.asset1 {
+  position: absolute;
+  top: 40%;
+  left: -30%;
+  min-width:100vh; width:100vh; max-width:100vh;
+  min-height:100vh; height:100vh; max-height:100vh;
+  padding: 100px;
+  z-index: 100;    
+}
+
+.video2 {
+  position: absolute;
+  top: 105%;
+  left: -90%;
+  min-width:100vh; width:100vh; max-width:100vh;
+  min-height:100vh; height:100vh; max-height:100vh;
+  z-index: 1000;    
+}
+
+.video2 iframe {
+  min-width:40vh; width:50vh; max-width:60vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -70%);
+}
+
+
+.asset2
+ {
+  position: absolute;
+  top: 150%;
+  left: -140%;
+  min-width:100vh; width:100vh; max-width:100vh;
+  min-height:100vh; height:100vh; max-height:100vh;
+  padding: 100px;
+  z-index: 100; 
+}
+
+.video3 {
+  position: absolute;
+  top: 230%;
+  left: -90%;
+  min-width:100vh; width:100vh; max-width:100vh;
+  min-height:100vh; height:100vh; max-height:100vh;
+  z-index: 1000;    
+}
+
+.video3 iframe {
+  min-width:40vh; width:50vh; max-width:60vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -70%);
+}
+
+.asset3
+ {
+  position: absolute;
+  top: 285%;
+  left: -140%;
+  min-width:100vh; width:100vh; max-width:100vh;
+  min-height:100vh; height:100vh; max-height:100vh;
+  padding: 100px;
+  z-index: 100; 
+}
+
+
+.video4 {
+  position: absolute;
+  top: 330%;
+  left: -90%;
+  min-width:100vh; width:100vh; max-width:100vh;
+  min-height:100vh; height:100vh; max-height:100vh;
+  z-index: 1000;    
+}
+
+.video4 iframe {
+  min-width:40vh; width:50vh; max-width:60vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -70%);
+}
+
+.asset4
+ {
+display: none;
+}
+
+.asset5
+ {
+  position: absolute;
+  top: 390%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;    
+}
+
+
+.asset6
+ {
+  position: absolute;
+  animation: shake 7s ease infinite;
+  top: 420%;
+  left: 2.5%;
+  width: 40%;
+  height: auto;
+  z-index: 100000;  
   
-  /* visited link */
-  a:visited {
-    color: black;
-  }
   
-  /* mouse over link */
-  a:hover {
-    color: black;
-    font-family: 'Manrope', sans-serif;
-    text-shadow: 0 0 8px #000;
-    
-  }
-  
-  /* selected link */
-  a:active {
-    color: black;
-    font-family: 'Manrope', sans-serif;
-  }
-  
-  
+}
+
+
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+
+footer{
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  z-index: 1000000;
+}
+
+
+footer marquee{
+  display: flex;
+  border-collapse: collapse;
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  z-index: 1000;
+  padding-top: none;
+	padding: 20px;
+	text-align: center justify;
+  background-color: rgb(239, 30, 235);;
+	border: none;
+    color: rgb(0, 0, 0);
+    font-size: 2vh; 
+    font-family: 'Dia', helvetica, arial, sans-serif;
+    white-space: pre;
+    line-height: 1vh;
+    letter-spacing: auto;
+}
+ 
+
+}
