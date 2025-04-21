@@ -27,6 +27,20 @@
 }
 
 
+.fullscreen {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  overflow: hidden;
+  position: center center;
+}
+
+
 
 .opencall {
   float: right;
