@@ -3,13 +3,17 @@ html{
   overflow-y: auto;
 }
 
+
+
 body {
   background-image: url("./assets/background.png");
   background-color: rgb(0,0,0);
-  background-repeat: no-repeat;
+  background-repeat: repeat repeat-x;
   background-origin: content-box;
   background-position: center top;
-  height: 100%;
+  /*background-attachment: fixed;*/
+  background-size: cover;
+  width: 100%;
   font-family: 'Dia', helvetica, arial, sans-serif;
   font-family: 'Gilda Display', serif;
   font-family: 'Manrope', sans-serif;
@@ -43,6 +47,10 @@ header{
   font-size: .85vw; 
   font-family: 'Dia', helvetica, arial, sans-serif;
   background-color: none;
+}
+
+.android{
+  visibility: hidden;
 }
 
 .seccion {
@@ -93,8 +101,8 @@ header{
 .tituloprojecto:hover+.ID  {
   display: inline-block;
   position:absolute;
-  top: 35%;
-  right: -140%;
+  top: 5%;
+  left: 420%;
   width: fit-content;
   max-height: 100%;
   z-index: 100000;
@@ -104,13 +112,109 @@ header{
   display: inline-block;
   position:absolute;
   top: 35%;
-  left: -710%;
+  left: -10%;
   width: fit-content;
   max-height: 100%;
   z-index: 100000;
 }
 
 /* project */
+
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.parallax {
+  perspective: 100px;
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ 
+}
+
+.parallax__layer{
+  position: sticky ;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+*/
+
+.infoo {
+  visibility: hidden;
+}
+
+.android {
+  visibility: hidden;
+}
+
+
+.parallax__layer__0{
+  width: auto;
+  position: absolute;
+  z-index: 10000;
+}
+
+
+.parallax__layer__1{
+  perspective: 120px;
+  width: auto;
+  position: absolute;
+  bottom: -900vh;
+}
+
+
+.parallax__layer__2{
+  perspective: 100px;
+  width: auto;
+  position: absolute;
+  top: 900%;
+  z-index: 1000;
+}
+
+
+.parallax__layer__3{
+  width: auto;
+  position: absolute;
+  top: 60%;
+  z-index: -10;
+}
+
+
+
+
+
+
+
+
+/*
 
 .overlay1 {
   position: absolute;
@@ -129,12 +233,12 @@ header{
   width: 100%;
   height: 100%;
   padding: 2%;
-  z-index: 1000;    
+  z-index: 10;    
 }
 
 
 .overlay3 {
-  position: absolute;
+  position: fixed;
   top: 220%;
   left: 20%;
   width: 100%;
@@ -262,30 +366,130 @@ header{
   padding: 2%;
   z-index: 1000;    
 }
+*/
 
-
-.video1 {
-  position: relative;
-  top: 40%;
-  left: 20%;
+.videos {
+  position: absolute;
+  top: 90%;
+  left: 40%;
   width: 100%;
   height: 100%;
-  z-index: 1000;    
+  z-index: 1000; 
+  line-height: 12vh;   
 }
 
+
+
+.syncopate-regular {
+  font-family: "Syncopate", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*
+.syncopate-bold {
+  font-family: "Syncopate", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+  */
+
+.about{
+  display: inline-block;
+}
+
+
+
+h2{
+  font-family: "Syncopate", sans-serif;
+  font-size: 0.7vw;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: yellow;
+  text-align: center;
+  line-height: 1.5;
+  position: fixed;
+  padding: 1%;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  box-shadow: rgba(0, 0, 255, 1) -100px 100px 200px; 
+  left: 73%;
+  bottom: 0px;
+  right: auto;
+  z-index: 10000000000;
+  
+}
+
+/* info box link style */
+h2 a{
+  color: red;
+}
+
+h2 a:visited{
+  color: red;
+}
+
+h2 a:hover {
+  color: red;
+}
+
+h2 a:active {
+  color: red;
+}
 
 .lands {
-  position: fixed;
-  max-width: 100%;
-  width: 100%;
-  height: 100%;
-  padding: 2%;
-  bottom: -80%;
-  right: -70%;
-  z-index: 1000000000;    
+  position: absolute;
+  max-width: 60%;
+  width: 60%;
+  height: 60%;
+  padding: 5%;
+  top: 10%;
+  left: 20%;
+  z-index: 1000000000;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
 }
 
 
+
+
+h2{
+  font-family: "Syncopate", sans-serif;
+  font-size: 0.7vw;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: yellow;
+  text-align: center;
+  line-height: 1.5;
+  position: fixed;
+  padding: 1%;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  box-shadow: rgba(0, 0, 255, 1) -100px 100px 200px; 
+  left: 73%;
+  bottom: 0px;
+  right: auto;
+  z-index: 10000000000;
+  
+}
+
+/* info box link style */
+h2 a{
+  color: red;
+}
+
+h2 a:visited{
+  color: red;
+}
+
+h2 a:hover {
+  color: red;
+}
+
+h2 a:active {
+  color: red;
+}
 
 
 /* Dropdown Button */
@@ -360,7 +564,7 @@ a:visited {
 /* mouse over link */
 a:hover {
   color: white;
-  font-family: 'Manrope', sans-serif;
+  /*font-family: 'Manrope', sans-serif;*/
   text-shadow: 0 0 8px #000;
 }
 
@@ -436,11 +640,19 @@ footer marquee{
 @media (width <= 760px) {
 
  html{
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
     background-color: #ddd;
  }
 
+ body{
+  background-image: url('./assets/Android\ Compact\ -\ 1.png');
+  background-repeat: repeat repeat;
+  background-origin: content-box;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+ }
 
  .clock {
   font-size: 2vh; 
@@ -449,6 +661,9 @@ footer marquee{
   position: fixed;
   }
 
+  .parallax{
+    visibility: hidden;
+  }
 
   .seccion {
     font-size: 1.7vh; 
@@ -471,155 +686,44 @@ footer marquee{
     display: none;
   } 
 
-.asset0 {
+.lands{
+  visibility: visible;
   position: fixed;
-  top: 10%;
-  left: -10%;
-  padding: 5%;
-  height: auto;
-  max-width: 5%;
-  max-height: auto;
-  z-index: 100;  
+  left: 20vh;
+  bottom: 0;
+  min-width: 15%;
+  min-height: 15%;
+  width: 15%;
+  height: 15%;
+  translate: center center;
 }
 
 
-.video1 {
-  position: absolute;
-  top: 0%;
-  left: -90%;
-  min-width:100vh; width:100vh; max-width:100vh;
-  min-height:100vh; height:100vh; max-height:100vh;
-  z-index: 1000;    
+
+
+.video1{
+  visibility: hidden;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  /*transform: rotate(90deg);*/
 }
 
-.video1 iframe {
-  min-width:40vh; width:50vh; max-width:60vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-25%, -70%);
-}
-
-
-.asset1 {
-  position: absolute;
-  top: 40%;
-  left: -30%;
-  min-width:100vh; width:100vh; max-width:100vh;
-  min-height:100vh; height:100vh; max-height:100vh;
-  padding: 100px;
-  z-index: 100;    
-}
-
-.video2 {
-  position: absolute;
-  top: 105%;
-  left: -90%;
-  min-width:100vh; width:100vh; max-width:100vh;
-  min-height:100vh; height:100vh; max-height:100vh;
-  z-index: 1000;    
-}
-
-.video2 iframe {
-  min-width:40vh; width:50vh; max-width:60vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-25%, -70%);
-}
-
-
-.asset2
- {
-  position: absolute;
-  top: 150%;
-  left: -140%;
-  min-width:100vh; width:100vh; max-width:100vh;
-  min-height:100vh; height:100vh; max-height:100vh;
-  padding: 100px;
-  z-index: 100; 
-}
-
-.video3 {
-  position: absolute;
-  top: 230%;
-  left: -90%;
-  min-width:100vh; width:100vh; max-width:100vh;
-  min-height:100vh; height:100vh; max-height:100vh;
-  z-index: 1000;    
-}
-
-.video3 iframe {
-  min-width:40vh; width:50vh; max-width:60vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-25%, -70%);
-}
-
-.asset3
- {
-  position: absolute;
-  top: 285%;
-  left: -140%;
-  min-width:100vh; width:100vh; max-width:100vh;
-  min-height:100vh; height:100vh; max-height:100vh;
-  padding: 100px;
-  z-index: 100; 
-}
-
-
-.video4 {
-  position: absolute;
-  top: 330%;
-  left: -90%;
-  min-width:100vh; width:100vh; max-width:100vh;
-  min-height:100vh; height:100vh; max-height:100vh;
-  z-index: 1000;    
-}
-
-.video4 iframe {
-  min-width:40vh; width:50vh; max-width:60vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-25%, -70%);
-}
-
-.asset4
- {
-display: none;
-}
-
-.asset5
- {
-  position: absolute;
-  top: 390%;
-  right: 0%;
-  width: 100%;
+video {
+  /** Simulationg background-size: cover */
+  object-fit: cover;
   height: 100%;
-  z-index: 1000;    
-}
+  width: 100%;
 
-
-.asset6
- {
   position: absolute;
-  animation: shake 7s ease infinite;
-  top: 420%;
-  left: 2.5%;
-  width: 40%;
-  height: auto;
-  z-index: 100000;  
-  
-  
+  top: 0;
+  left: 0;
 }
 
-
-@keyframes shake {
-	0%, 100% {transform: translateX(0);}
-	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
-	20%, 40%, 60%, 80% {transform: translateX(10px);}
+h2{
+  visibility: hidden;
 }
 
 
@@ -644,7 +748,7 @@ footer marquee{
   padding-top: none;
 	padding: 20px;
 	text-align: center justify;
-  background-color: rgb(239, 30, 235);;
+  background-color: rgb(116, 0, 248);;
 	border: none;
     color: rgb(0, 0, 0);
     font-size: 2vh; 

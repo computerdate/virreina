@@ -312,6 +312,14 @@ th {
 
 /*IDs Hovers*/
 
+.Lands:hover{
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  background-image: url("./KIM LAUGHTON/assets/ID_Kim.png");
+}
+
+
 
 .LostTapes:hover{
   background-repeat: no-repeat;
