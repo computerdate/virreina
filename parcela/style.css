@@ -319,6 +319,14 @@ th {
   background-image: url("./KIM LAUGHTON/assets/ID_Kim.png");
 }
 
+.Hollow:hover{
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  background-image: url("./KARA GUT/assets/ID_KARA.png");
+}
+
+
 
 
 .LostTapes:hover{
