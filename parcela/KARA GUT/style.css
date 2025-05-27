@@ -1,6 +1,6 @@
 html{
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 
@@ -10,8 +10,8 @@ body {
   background-color: rgb(0,0,0);
   background-repeat: repeat repeat-x;
   background-origin: content-box;
-  background-position: center top;
-  /*background-attachment: fixed;*/
+  background-position: center center;
+  background-attachment: fixed;
   background-size: cover;
   width: 100%;
   font-family: 'Dia', helvetica, arial, sans-serif;
@@ -32,61 +32,25 @@ body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
     flex-wrap: wrap;
-}}
-
-.video-container {
-    position: relative;
-    width: 800px;
-    margin: 20px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-.video-container:hover {
-    transform: scale(1.02);
-}
-.vid {
-    width: 100%;
-    display: block;
-}
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    transition: opacity 0.3s ease;
-}
-.overlay-text {
-    color: white;
-    font-size: 24px;
-    text-align: center;
-}
-.video-container:hover .overlay {
-    opacity: 0;
 }
   
-
+/*
 header{
-  background-color: black;
-  width: 100%;
+  background-color: red;
+  width: 0%;
   padding: none;
   left: 0%;
 }
+*/
 
 /* reloj */
+
 .clock {
   position: absolute;
   padding: 2%;
   align-items: center;
   top: 0%;
-  left: 45%;
+  left: 50%;
   width: 100%;
   height: 100%;
   z-index: 100;
@@ -96,7 +60,9 @@ header{
   font-size: .85vw; 
   font-family: 'Dia', helvetica, arial, sans-serif;
   background-color: none;
+  translate: center center;
 }
+
 
 .android{
   visibility: hidden;
@@ -115,7 +81,7 @@ header{
   color: white;
   font-size: 1vw; 
   font-family: 'Manrope', sans-serif;
-  background-color: none;
+  background-color: transparent;
 }
 
 /* banner ID */
@@ -168,10 +134,6 @@ header{
 }
 
 /* project */
-
-
-
-
 .container {
   position: fixed;
   width: 100%;
@@ -182,11 +144,11 @@ header{
 
 .video-background {
   position: absolute;
-  top: 0;
+  top: -10%;
   left: 10%;
   width: 90%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   z-index: 1;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -197,12 +159,7 @@ header{
   opacity: 1;
 }
 
-.overlay {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 2;
-}
+
 
 .text-content {
   position: relative;
@@ -229,17 +186,20 @@ header{
 }
 
 .image-container {
+  /*background-color: rgb(255, 0, 0);*/
   font-size: 0.5em;
   font-family: Arial, sans-serif;
   flex-wrap: wrap;
   display: flex;
-  justify-content: center;
-  gap: 15rem;
+  text-align: center;
+  justify-content: right;
+  padding: none;
+  gap: 12rem;
   margin-top: 0.5rem;
-  z-index: 3; /* Ensure images are above the overlay */
+  z-index: 30000; /* Ensure images are above the overlay */
   position: fixed; /* Needed for absolute positioning of tooltips */
-  top: 7%;
-  right: 7%;
+  bottom: 0%;
+  right: 12%;
 }
 
 .thumbnail {
@@ -249,7 +209,7 @@ header{
   border-radius: none;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
-  border: 2px solid transparent;
+  border: 8px solid transparent;
 }
 
 .thumbnail:hover {
@@ -271,7 +231,7 @@ header{
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 4px 8px;
-  border-radius: 4px;
+  border-radius: 5px;
   font-size: 0.8rem;
   white-space: nowrap;
   opacity: 0;
@@ -326,10 +286,7 @@ header{
   }
 }
 
-
-
-
-
+  
 
 
 
@@ -537,6 +494,7 @@ footer marquee{
   background-size: cover;
  }
  
+
 
  .clock {
   font-size: 2vh; 
