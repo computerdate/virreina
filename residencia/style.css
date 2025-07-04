@@ -224,6 +224,7 @@ a:active {
 
 
 
+
   /*
  .APPLY a{
   color: red;
@@ -277,7 +278,7 @@ a:active {
   margin-left: -75px;
   margin-top: -75px;
   position: absolute;
-  right: 7%;
+  right: 10%;
   bottom: 5%;
   transform-style: preserve-3d;
   animation: spin 2.5s linear infinite;
@@ -393,30 +394,38 @@ h2 a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: inherit;
-    height: inherit;
-    width: 52.5vw;
-    height: 29.6vw;
+    width: 600px;
+    height: 100% !important;
     position: center,center;
     z-index: -1;
     pointer-events: none;
     overflow: hidden;
     object-fit: cover;
-    background-size: 100% 100%;
-    min-height: 30vh;
+    background-size: 50% 50%;
+    min-height: 10vh;
     min-width: 14.0625vh;
     /*position: absolute;*/
-    top: 50%;
-    left: 40%;
+    top: 60%;
+    left: 32%;
     transform: translate(-50%, -50%);
-    box-shadow:
-    inset 0 0 50px #fff,      /* inner white */
-    inset 20px 0 80px #37ff00,   /* inner left magenta short */
-    inset -20px 0 80px #37ff00,  /* inner right cyan short */
-    inset 20px 0 300px #37ff00,  /* inner left magenta broad */
-    inset -20px 0 300px #37ff00, /* inner right cyan broad */
-    0 0 50px #37ff00,            /* outer white */
-    -10px 0 80px #37ff00,        /* outer left magenta */
-    10px 0 80px #37ff00;         /* outer right cyan */
+}
 
+  .video2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 100% !important;
+    position: center,center;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+    object-fit: cover;
+    background-size: 50% 50%;
+    min-height: 10vh;
+    min-width: 14.0625vh;
+    /*position: absolute;*/
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
 }

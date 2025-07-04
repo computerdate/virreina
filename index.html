@@ -62,40 +62,47 @@ the OPEN CALL is addressed to cultural artists agents of all disciplines and loc
     </script>
 
 
-
-
-        
+       
     <script>
         /*
         document.querySelector('#container').setAttribute("onclick", "location.href='./residencia/index.html'");
-      */
+    
 
-        if (screen.width <= 500) {
-        document.location = './about/index.html';
+
+        if (screen.width <= 600) {
+        document.location = 'https://forms.gle/FZejuPLQfd8eTV9EA';
         }
+        </script>
+*/
+
+        <script type="text/javascript">
+    $(window).on('load resize',function(){
+        if($(window).width() < 600){
+            window.location = "https://forms.gle/FZejuPLQfd8eTV9EA"
+        }
+    });
+
       </script>
 
 
 
-<!--
+  <div class="fullscreen2">
+    <!--
+          <video src="./residencia/assetsLomaSerena/LomaSerena2026.mp4" id="video" preload="auto" autoplay="true" loop="loop" muted="muted"></video>
+  -->
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfZzaWhrgq1BeJt8YgncOusI_tlTVGgfuAwKZHMJ35zLmiw6g/viewform?embedded=true" width="580" height="4738" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+  </div>
+  
+  <script>
+    // Get the video
+    var video = document.getElementById("./residencia/assetsLomaSerena/LomaSerena2026.mp4");
+    </script>
 
-<div class="about">
-  <a href="./about/index.html" target="">
-    <img src="./assets/[VRN]Logo/[VRN]Logos-32.svg"
-    alt="VRN" height="100px" width="" ;="" >
-  </a>
-</div>
 
 
-<div class="opencall">
-  <a href="./about/index.html" target="">
-    <img src="./assets/[VRN]Logo/[VRN]Logos-32.svg"
-    alt="VRN" height="160px" width="" ;="" >
-  </a>
-</div>
 
 <div class="APPLY">
-  <a href="./residencia/apply.html" target="">
+  <a href="./residencia/LomaSerena_OpenCall.html" target="">
     <img src="./assets/BTN_OpenCall2025.gif"
     alt="OPENCALL2025" height="160px" width="" ;="" >
   </a>
@@ -104,12 +111,8 @@ the OPEN CALL is addressed to cultural artists agents of all disciplines and loc
 
 
 
-<div class="nowshowing">
-  <a href="?" target=""></a>
-    <img class="responsive center" src="./assets/[VRN]Logo/[VRN]Logos-28.svg"
-    alt="VRN" height="150px" width="" ;="" >
-  </div>
--->
+
+
 
 </div>
 

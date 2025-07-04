@@ -40,7 +40,9 @@
   position: center center;
 }
 
-
+.fullscreen2 {
+  visibility: hidden;
+}
 
 .opencall {
   float: right;
@@ -548,12 +550,57 @@ button:focus {
 
 
 
+
 @media screen and (max-width: 600px) {
 
+  
+html{
+  overflow-x: auto;
+  overflow-y: auto;
+}
 
-  html{
-    background-image: url('./assets/vrn_movil.png');
-    }
 
+    /*--Open Call Red Coin--*/
+.APPLY {
+   visibility: hidden;
+  }
+
+  .fullscreen {
+  visibility: hidden;
+}
+
+.estrellita {
+  visibility: hidden;
+}
+
+footer{
+  visibility: hidden;
+}
+
+.button__wrapper {
+  visibility: hidden;
+}
     
+
+.fullscreen2 {
+  visibility: visible;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  padding: none;
+  overflow: hidden;
+  position: center center;
+  translate: center center;
+}
+
+
+
+
   }
