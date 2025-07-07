@@ -366,3 +366,19 @@ a {
 }
 
 
+
+
+@media screen and (max-width: 600px) {
+
+  
+html{
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+#F2, #F1 {
+  visibility: hidden;
+}
+
+
+}
